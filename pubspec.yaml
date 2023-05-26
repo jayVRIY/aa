@@ -39,6 +39,7 @@ dependencies:
   auto_size_text: ^3.0.0
   bordered_text: ^2.0.0
   google_fonts: ^4.0.3
+  flutter_screenutil: ^5.7.0
 
 dev_dependencies:
   flutter_test:
