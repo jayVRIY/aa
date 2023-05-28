@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (c, b) {
-          return MaterialApp(
+          return const MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: MainPage(),
+            home: MainPage2(),
           );
         });
   }
@@ -38,25 +38,27 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   var edgeInsets = EdgeInsets.symmetric(horizontal: 60.h, vertical: 40.w);
   var data = [
-    "防灾减灾人人抓  幸福连着千万家",
-    "地球是我们的家  防灾减灾靠大家",
-    "群策群力防灾减灾  同心同德共建和谐",
-    "增强防灾减灾意识  提高防灾减灾技能",
-    "防灾减灾  共筑平安",
-    "未雨绸缪  防灾减灾",
+    "人人讲安全 个个会应急",
+    "以人为本 安全第一",
+    "安全生产责任重于泰山",
+    "发展绝不能以牺牲人的生命为代价",
+    "始终把人民生命安全放在首位",
+    "单位负责、职工参与、政府监管、行业自律、社会监督",
+    "落实安全责任 推动安全发展",
+    "全面落实企业安全生产主体责任"
   ];
   var current = 0;
 
   @override
   Widget build(BuildContext context) {
     var QR_Code = SizedBox(
-      child: Image.asset('asserts/imgs/QR_Code.png'),
       width: 150.w,
+      child: Image.asset('asserts/imgs/QR_Code.png'),
     );
     return Scaffold(
       body: PageView(children: [
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('asserts/imgs/IMG1.jpg'),
                 fit: BoxFit.cover,
@@ -73,13 +75,15 @@ class _MainPageState extends State<MainPage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Image.asset(
                                 'asserts/imgs/logo.png',
                                 width: 150,
                               ),
                               Expanded(child: Container()),
-                              Text(
+                              const Text(
                                 "富强·民主·文明·和谐·自由·平等·公正·法治·爱国·敬业·诚信·友善",
                                 style: TextStyle(
                                     fontFamily: 'NotoSansSC',
@@ -89,8 +93,6 @@ class _MainPageState extends State<MainPage> {
                                     letterSpacing: 15),
                               )
                             ],
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
                           )
                         ],
                       )),
@@ -112,7 +114,7 @@ class _MainPageState extends State<MainPage> {
                           ),
                           AutoSizeText(
                             data[current],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontFamily: 'NotoSansSC',
                                 fontSize: 3000,
                                 fontWeight: FontWeight.w900,
@@ -137,8 +139,8 @@ class _MainPageState extends State<MainPage> {
                                   children: [
                                     BorderedText(
                                       strokeWidth: 4,
-                                      strokeColor: Color(0xffB72222),
-                                      child: Text(
+                                      strokeColor: const Color(0xffB72222),
+                                      child: const Text(
                                         "苏州高新区减灾委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
@@ -150,9 +152,9 @@ class _MainPageState extends State<MainPage> {
                                     ),
                                     BorderedText(
                                       strokeWidth: 4,
-                                      strokeColor: Color(0xffB72222),
-                                      child: Text(
-                                        "苏州高新区（虎丘区）应急管理局",
+                                      strokeColor: const Color(0xffB72222),
+                                      child: const Text(
+                                        "苏州高新区安全生产委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 20,
@@ -167,13 +169,13 @@ class _MainPageState extends State<MainPage> {
                                   padding: const EdgeInsets.only(left: 10.0),
                                   child: BorderedText(
                                     strokeWidth: 4,
-                                    child: Text('宣',
+                                    strokeColor: const Color(0xffB72222),
+                                    child: const Text('宣',
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 20,
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold)),
-                                    strokeColor: Color(0xffB72222),
                                   ),
                                 )
                               ],
@@ -213,7 +215,7 @@ class _MainPageState extends State<MainPage> {
           ),
         ),
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('asserts/imgs/IMG2.png'),
                 fit: BoxFit.cover,
@@ -230,13 +232,15 @@ class _MainPageState extends State<MainPage> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Image.asset(
                                 'asserts/imgs/logo.png',
                                 width: 150,
                               ),
                               Expanded(child: Container()),
-                              Text(
+                              const Text(
                                 "富强·民主·文明·和谐·自由·平等·公正·法治·爱国·敬业·诚信·友善",
                                 style: TextStyle(
                                     fontFamily: 'NotoSansSC',
@@ -246,8 +250,6 @@ class _MainPageState extends State<MainPage> {
                                     letterSpacing: 15),
                               )
                             ],
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
                           )
                         ],
                       )),
@@ -257,7 +259,7 @@ class _MainPageState extends State<MainPage> {
                         children: [
                           AutoSizeText(
                             data[current],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontFamily: 'NotoSerifSC',
                                 fontSize: 3000,
                                 fontWeight: FontWeight.w900,
@@ -282,8 +284,8 @@ class _MainPageState extends State<MainPage> {
                                   children: [
                                     BorderedText(
                                       strokeWidth: 4,
-                                      strokeColor: Color(0xffB72222),
-                                      child: Text(
+                                      strokeColor: const Color(0xffB72222),
+                                      child: const Text(
                                         "苏州高新区减灾委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
@@ -295,9 +297,9 @@ class _MainPageState extends State<MainPage> {
                                     ),
                                     BorderedText(
                                       strokeWidth: 4,
-                                      strokeColor: Color(0xffB72222),
-                                      child: Text(
-                                        "苏州高新区（虎丘区）应急管理局",
+                                      strokeColor: const Color(0xffB72222),
+                                      child: const Text(
+                                        "苏州高新区安全生产委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 20,
@@ -312,13 +314,13 @@ class _MainPageState extends State<MainPage> {
                                   padding: const EdgeInsets.only(left: 10.0),
                                   child: BorderedText(
                                     strokeWidth: 4,
-                                    child: Text('宣',
+                                    strokeColor: const Color(0xffB72222),
+                                    child: const Text('宣',
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 20,
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold)),
-                                    strokeColor: Color(0xffB72222),
                                   ),
                                 )
                               ],
@@ -370,16 +372,15 @@ class MainPage2 extends StatefulWidget {
 }
 
 class _MainPageState2 extends State<MainPage2> {
-  var edgeInsets = EdgeInsets.symmetric(horizontal: 40.0, vertical: 40);
+  var edgeInsets = const EdgeInsets.symmetric(horizontal: 40.0, vertical: 40);
   var data = [
-    "防灾减灾人人抓",
-    "地球是我们的家",
-    "群策群力防灾减灾",
-    "增强防灾减灾意识",
-    "防灾减灾",
-    "未雨绸缪",
+    "人人讲安全",
+    "以人为本",
   ];
-  var data2 = ["幸福连着千万家", "防灾减灾靠大家", "同心同德共建和谐", "提高防灾减灾技能", "共筑平安", "防灾减灾"];
+  var data2 = [
+    "个个会应急",
+    "安全第一",
+  ];
   var current = 0;
 
   @override
@@ -387,7 +388,7 @@ class _MainPageState2 extends State<MainPage2> {
     return Scaffold(
       body: PageView(children: [
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('asserts/imgs/IMG1.jpg'),
                 fit: BoxFit.cover,
@@ -404,8 +405,10 @@ class _MainPageState2 extends State<MainPage2> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                               Row(
@@ -416,11 +419,11 @@ class _MainPageState2 extends State<MainPage2> {
                                     'asserts/imgs/logo.png',
                                     width: 100,
                                   ),
-                                  AutoSizeText(
+                                  const Text(
                                     "富强·民主·文明·和谐·自由·平等·公正·法治·爱国·敬业·诚信·友善",
                                     style: TextStyle(
                                         fontFamily: 'NotoSansSC',
-                                        fontSize: 20,
+                                        fontSize: 7.5,
                                         fontWeight: FontWeight.w900,
                                         color: Colors.white,
                                         letterSpacing: 3),
@@ -429,8 +432,6 @@ class _MainPageState2 extends State<MainPage2> {
                                 ],
                               ),
                             ],
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
                           )
                         ],
                       )),
@@ -439,31 +440,60 @@ class _MainPageState2 extends State<MainPage2> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Stack(
+                          Column(
                             children: [
-                              AutoSizeText(
-                                data[current],
-                                style: TextStyle(
-                                    fontFamily: 'NotoSansSC',
-                                    fontSize: 3000,
-                                    fontWeight: FontWeight.bold,
-                                    foreground: Paint()
-                                      ..color = Colors.white
-                                      ..style = PaintingStyle.stroke
-                                      ..strokeWidth = 10),
-                                maxLines: 1,
+                              Stack(
+                                children: [
+                                  AutoSizeText(
+                                    data[current],
+                                    style: TextStyle(
+                                        fontFamily: 'NotoSansSC',
+                                        fontSize: 3000,
+                                        fontWeight: FontWeight.bold,
+                                        foreground: Paint()
+                                          ..color = Colors.white
+                                          ..style = PaintingStyle.stroke
+                                          ..strokeWidth = 10),
+                                    maxLines: 1,
+                                  ),
+                                  AutoSizeText(
+                                    data[current],
+                                    style: const TextStyle(
+                                        fontFamily: 'NotoSansSC',
+                                        fontSize: 30000,
+                                        fontWeight: FontWeight.w900,
+                                        color: Color(0xff0E3775)),
+                                    maxLines: 1,
+                                  )
+                                ],
                               ),
-                              AutoSizeText(
-                                data[current],
-                                style: TextStyle(
-                                    fontFamily: 'NotoSansSC',
-                                    fontSize: 30000,
-                                    fontWeight: FontWeight.w900,
-                                    color: Color(0xff0E3775)),
-                                maxLines: 1,
-                              )
+                              Stack(
+                                children: [
+                                  AutoSizeText(
+                                    data2[current],
+                                    style: TextStyle(
+                                        fontFamily: 'NotoSansSC',
+                                        fontSize: 3000,
+                                        fontWeight: FontWeight.bold,
+                                        foreground: Paint()
+                                          ..color = Colors.white
+                                          ..style = PaintingStyle.stroke
+                                          ..strokeWidth = 10),
+                                    maxLines: 1,
+                                  ),
+                                  AutoSizeText(
+                                    data2[current],
+                                    style: const TextStyle(
+                                        fontFamily: 'NotoSansSC',
+                                        fontSize: 30000,
+                                        fontWeight: FontWeight.w900,
+                                        color: Color(0xff0E3775)),
+                                    maxLines: 1,
+                                  )
+                                ],
+                              ),
                             ],
-                          ),
+                          )
                         ],
                       )),
                   GestureDetector(
@@ -476,8 +506,8 @@ class _MainPageState2 extends State<MainPage2> {
                       });
                     },
                     child: SizedBox(
-                      child: Image.asset('asserts/imgs/QR_Code.png'),
                       width: 80,
+                      child: Image.asset('asserts/imgs/QR_Code.png'),
                     ),
                   ),
                   Expanded(
@@ -496,8 +526,8 @@ class _MainPageState2 extends State<MainPage2> {
                                   children: [
                                     BorderedText(
                                       strokeWidth: 4,
-                                      strokeColor: Color(0xffB72222),
-                                      child: Text(
+                                      strokeColor: const Color(0xffB72222),
+                                      child: const Text(
                                         "苏州高新区减灾委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
@@ -509,9 +539,9 @@ class _MainPageState2 extends State<MainPage2> {
                                     ),
                                     BorderedText(
                                       strokeWidth: 4,
-                                      strokeColor: Color(0xffB72222),
-                                      child: Text(
-                                        "苏州高新区（虎丘区）应急管理局",
+                                      strokeColor: const Color(0xffB72222),
+                                      child: const Text(
+                                        "苏州高新区安全生产委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 18,
@@ -522,18 +552,18 @@ class _MainPageState2 extends State<MainPage2> {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10,
                                 ),
                                 BorderedText(
                                   strokeWidth: 4,
-                                  child: Text('宣',
+                                  strokeColor: const Color(0xffB72222),
+                                  child: const Text('宣',
                                       style: TextStyle(
                                           fontFamily: 'NotoSansSC',
                                           fontSize: 20,
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold)),
-                                  strokeColor: Color(0xffB72222),
                                 )
                               ],
                             ),
@@ -548,7 +578,7 @@ class _MainPageState2 extends State<MainPage2> {
           ),
         ),
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('asserts/imgs/IMG2.png'),
                 fit: BoxFit.cover,
@@ -565,8 +595,10 @@ class _MainPageState2 extends State<MainPage2> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
                               Row(
@@ -577,11 +609,11 @@ class _MainPageState2 extends State<MainPage2> {
                                     'asserts/imgs/logo.png',
                                     width: 100,
                                   ),
-                                  AutoSizeText(
+                                  const Text(
                                     "富强·民主·文明·和谐·自由·平等·公正·法治·爱国·敬业·诚信·友善",
                                     style: TextStyle(
                                         fontFamily: 'NotoSansSC',
-                                        fontSize: 20,
+                                        fontSize: 7.5,
                                         fontWeight: FontWeight.w900,
                                         color: Colors.white,
                                         letterSpacing: 3),
@@ -590,8 +622,6 @@ class _MainPageState2 extends State<MainPage2> {
                                 ],
                               ),
                             ],
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            mainAxisAlignment: MainAxisAlignment.center,
                           )
                         ],
                       )),
@@ -603,7 +633,7 @@ class _MainPageState2 extends State<MainPage2> {
                           children: [
                             AutoSizeText(
                               data[current],
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontFamily: 'NotoSerifSC',
                                   fontSize: 3000,
                                   fontWeight: FontWeight.bold,
@@ -612,13 +642,13 @@ class _MainPageState2 extends State<MainPage2> {
                             ),
                             AutoSizeText(
                               data2[current],
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontFamily: 'NotoSerifSC',
-                                  fontSize: 30000,
+                                  fontSize: 3000,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.white),
                               maxLines: 1,
-                            )
+                            ),
                           ],
                         ),
                       )),
@@ -632,8 +662,8 @@ class _MainPageState2 extends State<MainPage2> {
                       });
                     },
                     child: SizedBox(
-                      child: Image.asset('asserts/imgs/QR_Code.png'),
                       width: 80,
+                      child: Image.asset('asserts/imgs/QR_Code.png'),
                     ),
                   ),
                   Expanded(
@@ -652,8 +682,8 @@ class _MainPageState2 extends State<MainPage2> {
                                   children: [
                                     BorderedText(
                                       strokeWidth: 4,
-                                      strokeColor: Color(0xffB72222),
-                                      child: Text(
+                                      strokeColor: const Color(0xffB72222),
+                                      child: const Text(
                                         "苏州高新区减灾委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
@@ -665,9 +695,9 @@ class _MainPageState2 extends State<MainPage2> {
                                     ),
                                     BorderedText(
                                       strokeWidth: 4,
-                                      strokeColor: Color(0xffB72222),
-                                      child: Text(
-                                        "苏州高新区（虎丘区）应急管理局",
+                                      strokeColor: const Color(0xffB72222),
+                                      child: const Text(
+                                        "苏州高新区安全生产委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 18,
@@ -678,18 +708,18 @@ class _MainPageState2 extends State<MainPage2> {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 10,
                                 ),
                                 BorderedText(
                                   strokeWidth: 4,
-                                  child: Text('宣',
+                                  strokeColor: const Color(0xffB72222),
+                                  child: const Text('宣',
                                       style: TextStyle(
                                           fontFamily: 'NotoSansSC',
                                           fontSize: 20,
                                           color: Colors.white,
                                           fontWeight: FontWeight.bold)),
-                                  strokeColor: Color(0xffB72222),
                                 )
                               ],
                             ),
