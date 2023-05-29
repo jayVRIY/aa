@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         builder: (c, b) {
           return const MaterialApp(
             debugShowCheckedModeBanner: false,
-            home: MainPage2(),
+            home: MainPage(),
           );
         });
   }
@@ -141,20 +141,19 @@ class _MainPageState extends State<MainPage> {
                                       strokeWidth: 4,
                                       strokeColor: const Color(0xffB72222),
                                       child: const Text(
-                                        "苏州高新区减灾委员会办公室",
+                                        "苏州高新区安全生产委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 20,
                                             fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            letterSpacing: 3),
+                                            color: Colors.white),
                                       ),
                                     ),
                                     BorderedText(
                                       strokeWidth: 4,
                                       strokeColor: const Color(0xffB72222),
                                       child: const Text(
-                                        "苏州高新区安全生产委员会办公室",
+                                        "苏州高新区（虎丘区）应急管理局",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 20,
@@ -286,20 +285,19 @@ class _MainPageState extends State<MainPage> {
                                       strokeWidth: 4,
                                       strokeColor: const Color(0xffB72222),
                                       child: const Text(
-                                        "苏州高新区减灾委员会办公室",
+                                        "苏州高新区安全生产委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 20,
                                             fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            letterSpacing: 3),
+                                            color: Colors.white),
                                       ),
                                     ),
                                     BorderedText(
                                       strokeWidth: 4,
                                       strokeColor: const Color(0xffB72222),
                                       child: const Text(
-                                        "苏州高新区安全生产委员会办公室",
+                                        "苏州高新区（虎丘区）应急管理局",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 20,
@@ -528,20 +526,19 @@ class _MainPageState2 extends State<MainPage2> {
                                       strokeWidth: 4,
                                       strokeColor: const Color(0xffB72222),
                                       child: const Text(
-                                        "苏州高新区减灾委员会办公室",
+                                        "苏州高新区安全生产委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            letterSpacing: 3),
+                                            color: Colors.white),
                                       ),
                                     ),
                                     BorderedText(
                                       strokeWidth: 4,
                                       strokeColor: const Color(0xffB72222),
                                       child: const Text(
-                                        "苏州高新区安全生产委员会办公室",
+                                        "苏州高新区（虎丘区）应急管理局",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 18,
@@ -684,20 +681,19 @@ class _MainPageState2 extends State<MainPage2> {
                                       strokeWidth: 4,
                                       strokeColor: const Color(0xffB72222),
                                       child: const Text(
-                                        "苏州高新区减灾委员会办公室",
+                                        "苏州高新区安全生产委员会办公室",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
-                                            color: Colors.white,
-                                            letterSpacing: 3),
+                                            color: Colors.white),
                                       ),
                                     ),
                                     BorderedText(
                                       strokeWidth: 4,
                                       strokeColor: const Color(0xffB72222),
                                       child: const Text(
-                                        "苏州高新区安全生产委员会办公室",
+                                        "苏州高新区（虎丘区）应急管理局",
                                         style: TextStyle(
                                             fontFamily: 'NotoSansSC',
                                             fontSize: 18,
